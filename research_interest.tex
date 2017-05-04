@@ -25,7 +25,7 @@
 Determination of the mechanism of superconductivity (SC) in correlated electron superconductors is one of the most challenging 
 problems in condensed matter physics. Recent discovery of an ubiquitous charge ordered (CO) state proximate to (SC) within the 
 pseudo-gap phase of cuprates \cite{ghiringhelli12a,chang12a,comin14a,wu13a} has given the problem a new complexity. A quantum critical
-transition that separates the under-doped and over-doped copper oxides has been proposed as well as debated \cite{lee06a,anderson04a,scalapino12a}. It is highly relevant in this context that there exist
+transition that separates the under-doped and over-doped copper oxides has been proposed as well as debated \cite{anderson04a,lee06a,scalapino12a}. It is highly relevant in this context that there exist
 other correlated-electron superconductors where also quantum criticality plays a crucial role; where SC is
 proximate to CO (with sometimes anitiferromagnet (AFM) a neighboring phase), but is reached not by doping but by application
 of pressure that modifies the one-electron bandwidth. It is conceivable that the
@@ -41,7 +41,8 @@ Z[Pd(dmit)$_{2}$]$_{2}$, where Z is a closed-shell monovalent cation. In all cas
 layers are separated by inactive inorganic layers. In my research I have focussed on hole carriers (BEDT-TTF)$_{2}$X. Depending
 on the anion, (BEDT-TTF)$_{2}$X have different crystal structures, which are referred to as $\alpha$, $\beta$, $\kappa$, $\theta$ etc. 
 The common features shared by all superconducting CTS are quasi-two-dimensionality of
-the active organic layers, strong e-e repulsion, geometric lattice frustration and carrier density ($\rho$= 0.5) per molecule.
+the active organic layers, strong e-e repulsion, geometric lattice frustration and carrier density ($\rho$= 0.5) ($\rho$ = No of carriers/No of sites)
+ per molecule.
 
 \subsection{Broken symmetries and SC}
 The superconducting states in the CTS are often proximate to AFM, quantum spin liquid (QSL) or CO. 
@@ -51,14 +52,16 @@ spin fluctuations are responsible for the SC \cite{nevidomskyy08a,kino98a,schmal
 are also common and are seen in the $\alpha$, $\theta$, $\beta$ and  $\beta''$-(BEDT-TTF) compounds, 
 as well as in the electron carrier EtMe$_{3}$P[Pd(dmit)$_{2}$]$_{2}$. 
 
- $\kappa$-(BEDT-TTF)$_{2}$ are strongly dimerized, with the intradimer
+
+$\kappa$-(BEDT-TTF)$_{2}$ are strongly dimerized, with the intradimer
 hopping integrals significantly larger than the interdimer hoppings. The dimer unit cell contains
 1 hole on the average, which has led to effective 1/2-filled band Hubbard [100–108] and Hubbard-
 Heisenberg U-$t$-$J$ [65–67, 116–118] models for $\kappa$-(BEDT-TTF)$_{2}$X. The dimer lattice is anisotropic triangular,
 and for weak anisotropy the effective model successfully explains the experimentally observed AFM[119, 120]. 
-Precise numerical work by our group \cite{ngomes12a, clay08a, dayal12a} and others \cite{tocchio09a, yanagisawa13a} 
-have however shown that there is no superconducting order within the $\rho$ = 1 triangular lattice Hubbard band
-for any anisotropy and U. Pair correlations are enhanced by U only for nearest-neighbor pairs, but this reflects AFM spin coupling and not SC.
+Precise numerical work by our group \cite{clay08a, dayal12a, ngomes12a} and others \cite{tocchio09a, yanagisawa13a} 
+have however shown that there is no superconducting order within the $\rho$ = 1  
+triangular lattice Hubbard band for any anisotropy and U. Pair correlations are enhanced by U 
+only for nearest-neighbor pairs, but this reflects AFM spin coupling and not SC.
 
 \subsection{Effective e-e attraction and spin singlet states in $\rho$ =0.5}
 It has often been surmised that correlated electron SC evolves upon doping a spin-gapped semiconductor, 
@@ -106,6 +109,11 @@ Fig.~\ref{pairing-fig} enhancement of $\bar{P}(U)$ occurs for $\rho$ slightly aw
 the $\rho$ at which $\bar{P}(U)$ is enhanced (excluding the 6$\times$6 lattice where this deviation is zero) decreases monotonically with
 size.
 
+In a different calculation  on the monomer lattices of the organic charge-transfer solids $\kappa$-(BEDT-TTF)$_{2}$X,  
+for 32 and 64 molecular sites, we found that d-wave superconducting pair-pair correlations
+are enhanced by electron-electron interactions only for a narrow carrier concentration about $\rho$ = 0.5 \cite{wpd2016}.
+
+
 The numerical ground state results have been further confirmed by finite temperature Determinantal Quantum
 Monte Carlo (DQMC) calculations. 
 
@@ -115,12 +123,12 @@ Computational methods were an important part of our work. Here I briefly summari
 the research. 
 
 \subsection{Valence Bond (VB) diagonalization}
-The VB method used spin adapted VB diagram basis for studying correlated quantum systems \cite{ramashesha84a,ramashesha84b,ramashesha86a}. 
+The VB method used spin adapted VB diagram basis for studying correlated quantum systems \cite{ramashesha84b,ramashesha84a,ramashesha86a}. 
 The advantage of VB methodover methods conserving only $S_{z}$ are that it allows visualization of wavefunctions in terms of dominant VB diagrams. 
 
 \subsection{Determinantal Quantum Monte Carlo (DQMC)}
 DQMC allows simulation of Hubbard-type models by integrating out the fermion degrees of freedom, replacing the Hubbard interaction
-with an auxilliary Hubbard-Stratonovich field \cite{loh92a,blankenbecler81a}. The method suffers from sign problem when used for 
+with an auxilliary Hubbard-Stratonovich field \cite{blankenbecler81a,loh92a}. The method suffers from sign problem when used for 
 fermion systems. Electron phonon-coupling can also be treated within DQMC \cite{johnston13a}. 
 
 \subsection{Path Integral Renormalization Group (PIRG)}
@@ -156,14 +164,24 @@ The evolving phase diagram and continuous dicovery of exotic phenomena in the un
 The future scope of research thus, is many-fold. 
 The CO state is known to be accompanied by giant phonon anomalies \cite{liu15a}. The effect of phonon
 could be studied as a combined effect of e-e and e-ph interactions in 2D systems within the Hubbard -Holstein model. 
-Prior numerical calculations have been limited to $\rho=1$  \cite{nowadnick12a,johnston13a}. Hubbard-Holstein model in 1D has been extensively
+Prior numerical calculations have been limited to $\rho=1$  \cite{johnston13a,nowadnick12a}. Hubbard-Holstein model in 1D has been extensively
 studied using Stochastic Series Expansion (SSE) QMC \cite{clay05a,hardikar07a}. To add the effect of phonons, the variation of
 position coordinate of each oscillator will require an additional Monte Carlo sampling. The bare Hubbard model is 
 sign-free at $\rho=1$. Addition of e-ph interaction to the model has shown sign problem in the square lattice $\rho=1$ limit \cite{johnston13a}. 
 Code development for the Hubbard-Holstein model to study pairing correlation and bond coupled e-ph model may be of interest.   
-In the end, learning new algorithms and implementing them will keep me exploiting my code writing skills and take me deeper into numerical techniques.
-Given the absence of an analytical solution of the problem, numerical methods has the ability to for an unbiased 
-treatment of the strongly correlated problem. 
+
+
+Finally, aside from their application in strong correlation physics, numerical methods 
+are heavily used in a wide range of multiscale problems. The ab-initio molecular dynamics (MD), density functional theory (DFT),
+biophysics of protein folding \cite{nolting05a,scheraga07a}, 
+multiscale optical design \cite{milojkovic15a}
+are to name a few. The fluidity of applicability of algorithms and numerical techniques 
+have been exploited by computational physicists in MD simulations\cite{marx96a,guglielmo17a}, transport across cellular membranes
+\cite{adelman16,veshaguri16}, modeling of cell motion and shape using elasticity theory\cite{goldstein00}.
+The dynamic and interdisciplinary nature of numerical methods is what excites me the most.
+In future I would like to dive deeper into learning different algorithms and their implementations and explore more
+the ``fluidity'' of the field.  
+    
 %\bibliographystyle{abbrvnat}
 \bibliography{bibliography}
   
